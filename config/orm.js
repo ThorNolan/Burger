@@ -1,5 +1,10 @@
+//=============================== DEPENDENCIES ==========================================
+
 // Import MySQL connection.
 var connection = require("../config/connection.js");
+
+
+//================================= FUNCTIONS ===========================================
 
 // Helper function for SQL syntax.
 // Let's say we want to pass 3 values into the mySQL query.
@@ -39,7 +44,7 @@ function objToSql(ob) {
   return arr.toString();
 }
 
-// Object for all our SQL statement functions.
+// Object for all SQL statement functions.
 var orm = {
   selectAll: function(tableInput, cb) {
     var queryString = "SELECT * FROM " + tableInput + ";";
@@ -90,5 +95,7 @@ var orm = {
   }
 };
 
-// Export the orm object for the model (cat.js).
+//================================== EXPORTS ============================================
+
+// Export the orm object for the model (burger.js).
 module.exports = orm;
