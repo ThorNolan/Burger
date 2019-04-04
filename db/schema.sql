@@ -1,12 +1,12 @@
--- this schema can be reused to create and populate a new database --
+-- this schema can be reused to create a new database and table --
 
-CREATE DATABASE burgers_db;
-USE burgers_db;
+CREATE DATABASE butters_db;
+USE butters_db;
 
-CREATE TABLE burgers
+CREATE TABLE butters
 (
 	id int NOT NULL AUTO_INCREMENT,
-	burger_name varchar(255) NOT NULL,
-	devoured BOOLEAN DEFAULT false,
+	butter_name varchar(255) NOT NULL,
+	passed BOOLEAN DEFAULT false,
 	PRIMARY KEY (id)
 );
