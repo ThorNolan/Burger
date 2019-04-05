@@ -19,13 +19,17 @@ This app has been deployed to Heroku, and the link can be found [here](heroku li
 
 ## 🔧 Technologies Used  
 
++ **HTML5** and **CSS3** for page content and styling.
+
++ **Materialize.css** as a CSS framework for some additional styles.
+
 + **JavaScript** for the app's logic.
   
 + **Node.JS** for the app's server environment.
 
-+ **NPM** for installation of the **express** package required by the app.
++ **NPM** for installation of the **express**, **mysql**, and **express-handlebars** packages required by the app.
   
-+ **Handlebars** for generating HTML.
++ **Handlebars** for templating and generating HTML.
 
 + **MySQL** for database creation and data persistence.
   
