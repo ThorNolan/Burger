@@ -1,0 +1,46 @@
+<h1>Pass the Butter</h1>
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col s5">
+        {{#each butters}}
+          {{#unless this.passed}}
+            <div>
+              <form action="/butters/{{this.id}}?_method=PUT" method="POST">
+                <button type="submit" class="hvr-forward unpassedButter"> {{this.butter_name}}</button>
+              </form>
+            </div>
+          {{/unless}}
+        {{/each}}
+      </div>
+
+    <div class="col s2">
+        <img src="../public/assets/img/butter-bot.png" id="butterBot">
+    </div>    
+
+      <div class="col s5">
+        {{#each butters}}
+          {{#if this.passed}}
+            <div class="passedButter">
+              <div>
+                {{this.butter_name}}
+              </div>
+            </div>
+          {{/if}}
+        {{/each}}
+      </div>
+    </div>
+  </div>
+</main>
+
+<h2>Add More Butter!</h2>
+
+<div class="row">
+  <div class="col s12">
+    <form action="/butters" method="POST">
+      <input type="text" id="name" name="butter_name" placeholder="Sweet, tasty butter...">
+      <button type="submit" class="addBurgerButton">GIVE HIM PURPOSE</button>
+    </form>
+  </div>
+</div>
