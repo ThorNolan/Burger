@@ -27,7 +27,7 @@ app.set("view engine", "handlebars");
 //=================================== ROUTING ===========================================
 
 // Import routes from controllers and give the server access to them.
-var routes = require("./controllers/burgersController.js");
+var routes = require("./controllers/butters_controller.js");
 
 // Tell my app to use the imported routes.
 app.use(routes);

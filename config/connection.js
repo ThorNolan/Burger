@@ -15,7 +15,8 @@ if (process.env.JAWSDB_URL) {
   user: "root",
   password: "password",
   database: "butters_db"
-});
+  });
+};
 
 // Establish connection.
 connection.connect(function(err) {
