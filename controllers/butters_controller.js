@@ -49,7 +49,7 @@ router.post("/api/butters/:id", function(req, res) {
     });
 });
 
-// Post route for putting butter back to unpassed side.
+// Post route for putting butter back to unpassed side to maximize futility.
 router.post("/api/butters/passback/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
