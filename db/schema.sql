@@ -8,5 +8,6 @@ CREATE TABLE butters
 	id int NOT NULL AUTO_INCREMENT,
 	butter_name varchar(255) NOT NULL,
 	passed BOOLEAN DEFAULT false,
+	createdAt TIMESTAMP NOT NULL,
 	PRIMARY KEY (id)
 );
