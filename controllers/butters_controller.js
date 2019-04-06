@@ -14,7 +14,7 @@ router.get("/", function(req, res) {
       var hbsObject = {
         butters: data
       };
-      console.log(hbsObject);
+      // console.log(hbsObject);
       res.render("index", hbsObject);
     });
   });
@@ -35,7 +35,7 @@ router.post("/api/butters", function(req, res) {
 router.post("/api/butters/:id", function(req, res) {
     var condition = "id = " + req.params.id;
   
-    console.log("condition", condition);
+    // console.log("condition", condition);
   
     butter.updateOne({
       passed: true
@@ -53,7 +53,7 @@ router.post("/api/butters/:id", function(req, res) {
 router.post("/api/butters/passback/:id", function(req, res) {
   var condition = "id = " + req.params.id;
 
-  console.log("condition", condition);
+  // console.log("condition", condition);
 
   butter.updateOne({
     passed: false

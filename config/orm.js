@@ -64,7 +64,7 @@ var orm = {
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
 
-    console.log(queryString);
+    // console.log(queryString);
 
     // Query my database.
     connection.query(queryString, vals, function(err, result) {
@@ -85,7 +85,8 @@ var orm = {
     queryString += " WHERE ";
     queryString += condition;
 
-    console.log(queryString);
+    // console.log(queryString);
+    
     // Query my database.
     connection.query(queryString, function(err, result) {
       if (err) {

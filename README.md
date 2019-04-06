@@ -1,6 +1,8 @@
 Pass the Butter
 =====================================================
-Butter bots' only purpose is to pass butter. That's it. That's all he does. But in the spirit of the random cruelty of the universe, butter bot was imbued by his creator (Rick) with a consciousness, so he knows himself and is capable of asking why. His existence is pain. Join butter bot in an exercise in futility as you simply pass butter: pass it to the column on the right, or pass it right back over to the column on the left, or even add new types of butter to just pass around! This full-stack butter bot simulator let's you experience this feeling yourself—and you just might find it's not so hard to commiserate with this sad little robot. 
+Butter bots' only purpose is to pass butter. That's it. That's all he does. But in the spirit of the random cruelty of the universe, butter bot was imbued by his creator (Rick) with a consciousness, so he knows himself and is capable of asking why. His existence is pain. 
+
+Join butter bot in an exercise in futility as you simply pass butter: pass it to the column on the right, or pass it right back over to the column on the left, or even add new types of butter to just pass around! This full-stack butter bot simulator let's you experience this feeling yourself—and you just might find it's not so hard to commiserate with this sad little robot. 
 
 This app utilizes Node.js for its server environment and Express for routing. Data is persistent, as it is stored in a MySQL database that is dynamically updated based on user interaction. The site also utilizes MVC (Model View Controller) file structure, and serves up HTML content using Handlebars templating.
 

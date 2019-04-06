@@ -1,31 +1,33 @@
-<h1>Pass the Butter</h1>
+<div class="container">
+  <h1 class="center-align">Pass the Butter</h1>
+</div>  
 
 <main>
   <div class="container">
     <div class="row">
-      <div class="col s5">
+      <div class="col l5 m5 s5 ">
         {{#each butters}}
           {{#unless this.passed}}
             <div>
               <form action="/api/butters/{{this.id}}?_method=POST" method="POST">
-                <button type="submit" class="btn hvr-forward waves-effect waves-light unpassedButter"> {{this.butter_name}}</button>
+                <button type="submit" class="btn black hvr-forward waves-effect waves-light unpassedButter"> {{this.butter_name}}</button>
               </form>
             </div>
           {{/unless}}
         {{/each}}
       </div>
 
-    <div class="col s2">
-        <img src="/assets/img/butter-bot.png" id="butterBot" alt="Butter Bot">
+    <div class="col l2 m2 s2">
+        <img class="responsive-img" src="/assets/img/butter-bot.png" id="butterBot" alt="Butter Bot">
     </div>    
 
-      <div class="col s5">
+      <div class="col l5 m5 s5">
         {{#each butters}}
           {{#if this.passed}}
-            <div class="passedButter">
+            <div>
               <div>
                 <form action="/api/butters/passback/{{this.id}}?_method=POST" method="POST">
-                    <button type="submit" class="btn hvr-backward waves-effect waves-light unpassedButter"> {{this.butter_name}}</button>
+                    <button type="submit" class="btn black hvr-backward waves-effect waves-light passedButter"> {{this.butter_name}}</button>
                 </form>    
               </div>
             </div>
@@ -36,13 +38,19 @@
   </div>
 </main>
 
-<h2>Add More Butter!</h2>
+<div class="container">
+  <h4 class="center-align">Add More Butter!</h4>
+</div>
 
 <div class="row">
   <div class="col s12">
-    <form action="/api/butters" method="POST">
-      <input type="text" id="name" name="butter_name" placeholder="Sweet, tasty butter...">
-      <button type="submit" class="btn pulse hvr-float-shadow waves-effect waves-light addButterBtn">GIVE HIM PURPOSE</button>
+    <form action="/api/butters" method="POST" class="center-align">
+      <input type="text" id="name" class="center-align" name="butter_name" placeholder="Sweet, tasty butter...">
+      <button type="submit" class="center-align btn hvr-float-shadow waves-effect waves-light addButterBtn">GIVE HIM PURPOSE</button>
     </form>
   </div>
+</div>
+
+<div class="video-container col s12 center-align">
+  <iframe class="center-align" width="560" height="315" src="https://www.youtube.com/embed/X7HmltUWXgs?start=30" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
