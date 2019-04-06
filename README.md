@@ -47,6 +47,8 @@ This app has been deployed to Heroku, and the link can be found [here](heroku li
 ## 🌟 Acknowledgements
 
 Many thanks to Dan Harmon and Justin Roiland for creating Rick and Morty, and to my instructor Jerome and my TA's for their help.
+
++ Butter button image source: <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
     
 ## 🌌 Author 
 

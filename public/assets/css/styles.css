@@ -20,12 +20,20 @@ iframe {
 
 h1 {
   font-family: 'Dokdo', cursive;
-  font-size: 76px;
+  font-size: 80px;
+}
+
+h3 {
+  font-family: 'Roboto Condensed', sans-serif; 
+  font-size: 26px;
+  font-style: italic;
+  margin-top: -2%;
+  margin-bottom: 8%;
 }
 
 h4 {
   font-family: 'Dokdo', cursive;
-  font-size: 52px;
+  font-size: 48px;
 }
 
 .btn {
@@ -51,16 +59,33 @@ h4 {
   margin-left: 38%;
 }
 
+.addButterBtn {
+  margin-top: 1.5%;
+}
+
 
 /* label focus color for add butter form */
 .input-field input[type=text]:focus + label, .materialize-textarea:focus:not([readonly]) + label {
   color: rgb(209, 174, 15) !important;
  }
 
-/* label underline focus color for contact form */
+/* label underline focus color */
 .input-field input[type=text]:focus, .materialize-textarea:focus:not([readonly]) {
   border-bottom: 1px solid rgb(209, 174, 15) !important;
   box-shadow: 0 1px 0 0 rgb(209, 174, 15) !important;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(209, 174, 15);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: rgb(209, 174, 15);
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: rgb(209, 174, 15);
 }
 
 /* Forward hover effect for buttons from hover.css*/
@@ -139,3 +164,51 @@ h4 {
     transform: translateY(5px);
     /* move the element down by 5px (it will stay in place because it's attached to the element that also moves up 5px) */
   }
+
+@media only screen and (max-width:768px) {
+  .passedButter {
+    padding: 2%;
+    margin: 2%;
+    margin-left: 25%;
+  }
+
+  .unpassedButter {
+    padding: 2%;
+    margin: 2%;
+    margin-left: 5%;
+  }
+
+  .btn {
+    min-height: 45px;
+    min-width: 75px;
+  }
+
+  #butterBot {
+    min-width: 100px;
+  }
+}
+
+@media only screen and (max-width:640px) {
+  .passedButter {
+    padding: 2%;
+    margin: 2%;
+    margin-left: 20%;
+  }
+
+  
+  .unpassedButter {
+    padding: 2%;
+    margin: 2%;
+    margin-left: 0%;
+  }
+
+  .btn {
+    min-height: 40px;
+    min-width: 70px;
+  }
+
+  #butterBot {
+    min-width: 75px;
+  }
+
+}

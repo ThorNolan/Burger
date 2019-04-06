@@ -1,5 +1,6 @@
 <div class="container">
   <h1 class="center-align">Pass the Butter</h1>
+  <h3 class="center-align">A Butter Bot Simulator</h3>
 </div>  
 
 <main>
@@ -10,7 +11,7 @@
           {{#unless this.passed}}
             <div>
               <form action="/api/butters/{{this.id}}?_method=POST" method="POST">
-                <button type="submit" class="btn black hvr-forward waves-effect waves-light unpassedButter"> {{this.butter_name}}</button>
+                <button type="submit" class="btn black flow-text hvr-forward waves-effect waves-light unpassedButter"> {{this.butter_name}}</button>
               </form>
             </div>
           {{/unless}}
@@ -27,7 +28,7 @@
             <div>
               <div>
                 <form action="/api/butters/passback/{{this.id}}?_method=POST" method="POST">
-                    <button type="submit" class="btn black hvr-backward waves-effect waves-light passedButter"> {{this.butter_name}}</button>
+                    <button type="submit" class="btn black flow-text hvr-backward waves-effect waves-light passedButter"> {{this.butter_name}}</button>
                 </form>    
               </div>
             </div>
@@ -45,8 +46,8 @@
 <div class="row">
   <div class="col s12">
     <form action="/api/butters" method="POST" class="center-align">
-      <input type="text" id="name" class="center-align" name="butter_name" placeholder="Sweet, tasty butter...">
-      <button type="submit" class="center-align btn hvr-float-shadow waves-effect waves-light addButterBtn">GIVE HIM PURPOSE</button>
+      <input type="text" id="name" class="center-align white" name="butter_name" placeholder="Sweet, tasty butter...">
+      <button type="submit" class="center-align flow-text btn black hvr-float-shadow waves-effect waves-light addButterBtn">GIVE HIM PURPOSE</button>
     </form>
   </div>
 </div>
