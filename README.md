@@ -6,7 +6,7 @@ Join butter bot in an exercise in futility as you simply pass butter: pass it to
 
 This app utilizes Node.js for its server environment and Express for routing. Data is persistent, as it is stored in a MySQL database that is dynamically updated based on user interaction. The site also utilizes MVC (Model View Controller) file structure, and serves up HTML content using Handlebars templating.
 
-![demo gif](link to live demo "demo gif of pass the butter in action")
+![demo gif](/public/assets/img/butter-bot-demo.gif "demo gif of pass the butter in action")
 
 ## 🔑 How to Use the App:
 
